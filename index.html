@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      margin-left: 180px;
+      height: 100vh;
+      margin-top: 20px;
+      background-color: pink; /* Add this line for pink background color */
+
+    }
+
+    .image-container {
+      position: relative;
+      max-width: 100%;
+    }
+
+    #size-control {
+      width: 100%;
+    }
+
+    #size-bar {
+      width: 100%;
+      display: flex;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <div id="size-bar">
+      <input type="range" id="size-control" min="50" max="300" value="100">
+      <span id="size-value">100%</span>
+    </div><br><br>
+    <img id="image" src="download (7).jpg" alt="Your Image">
+  </div>
+
+  <script>
+    const sizeControl = document.getElementById('size-control');
+    const sizeValue = document.getElementById('size-value');
+    const image = document.getElementById('image');
+
+    sizeControl.addEventListener('input', (event) => {
+      const newSize = event.target.value;
+      sizeValue.textContent = `${newSize}%`;
+      image.style.width = `${newSize}%`;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+![Screenshot 2024-02-05 135626](https://github.com/Amisha0971/ADJUST-IMAGE-RANGE-HTML-CSS/assets/136344215/75724fb5-73b9-45c3-9d2e-1c4b0773af66)
